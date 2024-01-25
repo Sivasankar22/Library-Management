@@ -51,10 +51,10 @@ public class AuthorService {
     }
 
     public List<String> getBookNames(Integer authorId){
-        //Can you write this piece of code :
+    
         List<String> bookNames = new ArrayList<>();
 
-        //We have authorId :--> Author Entity first
+        
 
         Author author = authorRepository.findById(authorId).get();
         List<Book> bookList = author.getBookList();
