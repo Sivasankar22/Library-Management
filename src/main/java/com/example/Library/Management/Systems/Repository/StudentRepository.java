@@ -7,9 +7,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface StudentRepository extends JpaRepository<Student,Integer> {
 
-    //Incase you write your own queries
-    //That is what are written here
-
+   
 
 
 }
