@@ -27,9 +27,7 @@ public class BookService {
 
     public String addBook(Book book,Integer authorId) throws Exception{
 
-        //What are the steps of code that we should we write here ???
-        //Final goal is : to save the book Entity
-        //Author object is missing : how to get author Entity ????
+      
 
         Optional<Author> optionalAuthor = authorRepository.findById(authorId);
 
@@ -42,7 +40,7 @@ public class BookService {
 
         book.setAuthor(author);
 
-        //Bcz its a bidirectional mapping :
+        //its a bidirectional mapping :
         //Author should also have the information of the Book Entity
         author.getBookList().add(book);
 
